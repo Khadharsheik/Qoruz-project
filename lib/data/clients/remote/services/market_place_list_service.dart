@@ -13,8 +13,6 @@ class MarketListService {
           'page': pageNumber,
         },
       );
-      log('check 3 $pageNumber');
-
       return response.data;
     } on DioException catch (e) {
       return e.response!.data;
@@ -31,7 +29,6 @@ class MarketListService {
           'id_hash': hashId,
         },
       );
-      print('ksmkd---> ${response.data} ');
       return response.data;
     } on DioException catch (e) {
       return e.response!.data;
